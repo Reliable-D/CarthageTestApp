@@ -89,7 +89,6 @@
 			children = (
 				0C3F81312181FE32002EBDEA /* AppDelegate.swift */,
 				0C3F81332181FE32002EBDEA /* ViewController.swift */,
-				0C3F8159218203DC002EBDEA /* New Group */,
 				0C3F81352181FE32002EBDEA /* Main.storyboard */,
 				0C3F81382181FE34002EBDEA /* Assets.xcassets */,
 				0C3F813A2181FE34002EBDEA /* LaunchScreen.storyboard */,
@@ -115,13 +114,6 @@
 				0C3F815421820119002EBDEA /* DLUtils.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0C3F8159218203DC002EBDEA /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
