@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		0C3F81392181FE34002EBDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3F81382181FE34002EBDEA /* Assets.xcassets */; };
 		0C3F813C2181FE34002EBDEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3F813A2181FE34002EBDEA /* LaunchScreen.storyboard */; };
 		0C3F81472181FE34002EBDEA /* CarthageTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F81462181FE34002EBDEA /* CarthageTestAppTests.swift */; };
+		0C3F815521820119002EBDEA /* DLNetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F815221820119002EBDEA /* DLNetworkKit.framework */; };
+		0C3F815621820119002EBDEA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F815321820119002EBDEA /* Alamofire.framework */; };
+		0C3F815721820119002EBDEA /* DLUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3F815421820119002EBDEA /* DLUtils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		0C3F81422181FE34002EBDEA /* CarthageTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3F81462181FE34002EBDEA /* CarthageTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageTestAppTests.swift; sourceTree = "<group>"; };
 		0C3F81482181FE34002EBDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C3F815221820119002EBDEA /* DLNetworkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DLNetworkKit.framework; path = Carthage/Build/iOS/DLNetworkKit.framework; sourceTree = "<group>"; };
+		0C3F815321820119002EBDEA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0C3F815421820119002EBDEA /* DLUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DLUtils.framework; path = Carthage/Build/iOS/DLUtils.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3F815521820119002EBDEA /* DLNetworkKit.framework in Frameworks */,
+				0C3F815621820119002EBDEA /* Alamofire.framework in Frameworks */,
+				0C3F815721820119002EBDEA /* DLUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,7 @@
 				0C3F81302181FE32002EBDEA /* CarthageTestApp */,
 				0C3F81452181FE34002EBDEA /* CarthageTestAppTests */,
 				0C3F812F2181FE32002EBDEA /* Products */,
+				0C3F815121820119002EBDEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +89,7 @@
 			children = (
 				0C3F81312181FE32002EBDEA /* AppDelegate.swift */,
 				0C3F81332181FE32002EBDEA /* ViewController.swift */,
+				0C3F8159218203DC002EBDEA /* New Group */,
 				0C3F81352181FE32002EBDEA /* Main.storyboard */,
 				0C3F81382181FE34002EBDEA /* Assets.xcassets */,
 				0C3F813A2181FE34002EBDEA /* LaunchScreen.storyboard */,
@@ -96,6 +107,23 @@
 			path = CarthageTestAppTests;
 			sourceTree = "<group>";
 		};
+		0C3F815121820119002EBDEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C3F815321820119002EBDEA /* Alamofire.framework */,
+				0C3F815221820119002EBDEA /* DLNetworkKit.framework */,
+				0C3F815421820119002EBDEA /* DLUtils.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C3F8159218203DC002EBDEA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +134,7 @@
 				0C3F812A2181FE32002EBDEA /* Sources */,
 				0C3F812B2181FE32002EBDEA /* Frameworks */,
 				0C3F812C2181FE32002EBDEA /* Resources */,
+				0C3F815821820140002EBDEA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,6 +220,33 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C3F815821820140002EBDEA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DLNetworkKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DLUtils.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DLNetworkKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DLUtils.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C3F812A2181FE32002EBDEA /* Sources */ = {
@@ -361,6 +417,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW8VE8WP3J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +439,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW8VE8WP3J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
